@@ -9,6 +9,7 @@
     "lint": "jshint --exclude=node_modules/** lib/",
     "test:xunit": "npm run test -- --reporter xunit"
   },
+  "engines": { "node": "5.1.0"},
   "author": "",
   "license": "ISC",
   "dependencies": {

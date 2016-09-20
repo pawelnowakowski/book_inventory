@@ -15,12 +15,12 @@ describe('Math in JS', function () {
 			.end(done)
 	});
 
-	it('allows to check book availability', function (done) {
+	/*it('allows to check book availability', function (done) {
 		var repository = require('../testStockRepository')();
 		repository._items([{"isbn": "1290", "count": "11"}]);
 		var app = require('../app.js')(repository);
 		request(app)
 			.get('/stock/1290')
 			.expect(200, {count: 11}, done)
-	});
+	});*/
 });
