@@ -12,7 +12,7 @@ var prod = {
 	region: 'eu',
 	maintenance: false,
 	stack: 'cedar-14',
-	config_vars: { MONGODB_URI: 'mongodb://heroku_c2ng6dvz:o5ga9i7lgftekc18d4hfp2i3aj@ds033996.mlab.com:33996/heroku_c2ng6dvz' },
+	config_vars: { MONGODB_URI: process.env.MONGODB_URI },
 	addons: {},
 	collaborators: [ 
 		'kamil.wojciechowski@contractors.roche.com',

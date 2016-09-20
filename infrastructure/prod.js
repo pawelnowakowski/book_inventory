@@ -8,7 +8,8 @@ var prod = {
 	region: 'eu',
 	maintenance: false,
 	stack: 'cedar-14',
-	config_vars: { 
+	config_vars: {
+		NODE_ENV: 'production'
 		MONGODB_URI: process.env.MONGODB_URI
 	},
 	addons: {},
