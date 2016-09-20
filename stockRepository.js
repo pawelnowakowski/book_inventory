@@ -3,7 +3,7 @@ var url = process.env.MONGODB_URI || 'mongodb://localhost:27017/myproject';
 var collection = MongoClient.connect(url, { 
 		db: { bufferMaxEntries: 0 }
 	}).then(function (db){
-	return db.collection('books');
+	return db.collection('books-pano');
 });
 var StockRepository = {
 	stockUp: function (book) {
