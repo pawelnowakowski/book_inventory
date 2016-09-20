@@ -3,7 +3,7 @@ var heroin = require('heroin-js');
 var configurator = heroin(process.env.HEROKU_API_TOKEN);
 
 var prod = { 
-	name: 'pano-book',
+	name: 'pano-book-test',
 	organization: undefined,
 	region: 'eu',
 	maintenance: false,
@@ -12,7 +12,6 @@ var prod = {
 		NODE_ENV: 'production',
 		MONGODB_URI: process.env.MONGODB_URI
 	},
-	addons: {},
 	collaborators: [ 
 		'kamil.wojciechowski@contractors.roche.com',
 		'paaweel01@gmail.com',
@@ -29,8 +28,7 @@ var prod = {
 		'app-alerting': { enabled: false }
 	},
 	formation: [ { process: 'web', quantity: 1, size: 'Free' } ],
-	log_drains: [],
-	domains: [ 'pano-book.herokuapp.com' ] 
+	log_drains: []
 }
 
 configurator(prod);
